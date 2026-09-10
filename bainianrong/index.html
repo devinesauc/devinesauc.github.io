@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>百年荣宅对外开放 - 参观指南、建筑看点与开放信息全解析</title>
+<meta name="description" content="百年荣宅对外开放专题，介绍荣宅的历史沿革、建筑风格、参观看点、开放信息与游览建议，帮助读者了解这座上海历史建筑对外开放后的参观方式与文化价值。">
+<meta name="keywords" content="百年荣宅对外开放,荣宅,上海历史建筑,荣宅参观,荣宅开放,老洋房,历史保护建筑">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+  :root{
+    --ink:#1d1a17;
+    --ink-soft:#4a423b;
+    --paper:#f6f1e8;
+    --paper-2:#fffdf9;
+    --gold:#a8842c;
+    --gold-soft:#c9a24a;
+    --brick:#7a3b2e;
+    --line:#e0d6c4;
+    --shadow:0 10px 30px rgba(60,45,25,.10);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:"Songti SC","Noto Serif SC","Source Han Serif SC",Georgia,"Microsoft YaHei",serif;
+    color:var(--ink);
+    background:var(--paper);
+    line-height:1.8;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;}
+  .wrap{width:min(1180px,92%);margin:0 auto;}
+
+  /* ============ 顶部 ============ */
+  .topbar{
+    background:var(--ink);
+    color:#e9dfcd;
+    font-size:13px;
+    letter-spacing:.4px;
+  }
+  .topbar .wrap{
+    display:flex;justify-content:space-between;align-items:center;
+    padding:8px 0;gap:12px;flex-wrap:wrap;
+  }
+  .topbar span{opacity:.85;}
+  .topbar .tagline{color:var(--gold-soft);}
+
+  header.site{
+    background:linear-gradient(180deg,#fffdf9 0%,#f6f1e8 100%);
+    border-bottom:1px solid var(--line);
+    position:sticky;top:0;z-index:50;
+    backdrop-filter:blur(6px);
+  }
+  .head-inner{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:16px 0;gap:20px;flex-wrap:wrap;
+  }
+  .brand{display:flex;align-items:center;gap:14px;}
+  .brand .seal{
+    width:52px;height:52px;flex:0 0 52px;
+    border:2px solid var(--brick);
+    border-radius:6px;
+    display:flex;align-items:center;justify-content:center;
+    color:var(--brick);
+    font-size:20px;font-weight:700;letter-spacing:1px;
+    background:#fff;
+    box-shadow:inset 0 0 0 3px #fff, 0 0 0 1px var(--brick);
+  }
+  .brand h1{
+    margin:0;font-size:22px;letter-spacing:2px;font-weight:700;
+  }
+  .brand p{
+    margin:2px 0 0;font-size:12.5px;color:var(--ink-soft);letter-spacing:1.5px;
+  }
+  nav.main ul{
+    list-style:none;display:flex;gap:26px;margin:0;padding:0;flex-wrap:wrap;
+    font-size:15px;letter-spacing:1px;
+  }
+  nav.main a{
+    padding:6px 2px;border-bottom:2px solid transparent;transition:.25s;
+  }
+  nav.main a:hover{border-color:var(--gold);color:var(--brick);}
+
+  /* ============ 首屏 ============ */
+  .hero{
+    position:relative;
+    background:
+      radial-gradient(circle at 82% 18%,rgba(201,162,74,.28),transparent 55%),
+      linear-gradient(140deg,#2b241d 0%,#3d3229 46%,#54402c 100%);
+    color:#f4ecdd;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";
+    position:absolute;inset:0;
+    background-image:
+      repeating-linear-gradient(90deg,rgba(255,255,255,.05) 0 1px,transparent 1px 26px),
+      repeating-linear-gradient(0deg,rgba(255,255,255,.035) 0 1px,transparent 1px 26px);
+    pointer-events:none;
+  }
+  .hero .wrap{
+    position:relative;z-index:2;
+    padding:70px 0 64px;
+    display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;
+  }
+  .hero .kicker{
+    display:inline-block;
+    font-size:13px;letter-spacing:3px;
+    color:var(--gold-soft);
+    border:1px solid rgba(201,162,74,.5);
+    border-radius:999px;
+    padding:4px 16px;margin-bottom:22px;
+  }
+  .hero h2{
+    font-size:clamp(28px,4.2vw,46px);
+    line-height:1.35;margin:0 0 20px;letter-spacing:2px;font-weight:700;
+  }
+  .hero h2 em{
+    font-style:normal;color:var(--gold-soft);
+  }
+  .hero p.lead{
+    font-size:16px;color:#ded2bd;margin:0 0 30px;max-width:52ch;
+  }
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap;}
+  .btn{
+    display:inline-block;padding:12px 28px;border-radius:4px;
+    font-size:15px;letter-spacing:2px;transition:.25s;border:1px solid transparent;
+  }
+  .btn-primary{background:var(--gold);color:#2b241d;font-weight:700;}
+  .btn-primary:hover{background:var(--gold-soft);transform:translateY(-2px);}
+  .btn-ghost{border-color:rgba(244,236,221,.45);color:#f4ecdd;}
+  .btn-ghost:hover{background:rgba(244,236,221,.12);}
+
+  .hero-facts{
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(244,236,221,.18);
+    border-radius:8px;
+    padding:26px 26px 20px;
+    backdrop-filter:blur(3px);
+  }
+  .hero-facts h3{
+    margin:0 0 16px;font-size:15px;letter-spacing:3px;color:var(--gold-soft);font-weight:600;
+  }
+  .hero-facts dl{margin:0;}
+  .hero-facts .row{
+    display:flex;justify-content:space-between;gap:14px;
+    padding:11px 0;border-bottom:1px dashed rgba(244,236,221,.2);font-size:14.5px;
+  }
+  .hero-facts .row:last-child{border-bottom:none;}
+  .hero-facts dt{color:#c8bda9;letter-spacing:1px;}
+  .hero-facts dd{margin:0;text-align:right;color:#f7f1e4;}
+
+  /* ============ 通用区块 ============ */
+  section{padding:64px 0;}
+  .sec-head{margin-bottom:34px;max-width:760px;}
+  .sec-head .eyebrow{
+    font-size:12.5px;letter-spacing:3px;color:var(--gold);display:block;margin-bottom:10px;
+  }
+  .sec-head h2{
+    font-size:clamp(22px,2.6vw,30px);margin:0 0 12px;letter-spacing:2px;line-height:1.45;
+  }
+  .sec-head p{margin:0;color:var(--ink-soft);font-size:15.5px;}
+
+  /* 概览 */
+  .overview{background:var(--paper-2);border-bottom:1px solid var(--line);}
+  .ov-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
+  .ov-card{
+    background:#fff;border:1px solid var(--line);border-radius:8px;
+    padding:28px 26px;box-shadow:var(--shadow);position:relative;
+  }
+  .ov-card::before{
+    content:"";position:absolute;left:0;top:26px;bottom:26px;width:3px;
+    background:linear-gradient(180deg,var(--gold),var(--brick));border-radius:3px;
+  }
+  .ov-card h3{margin:0 0 10px;font-size:17.5px;letter-spacing:1.5px;}
+  .ov-card p{margin:0;font-size:14.5px;color:var(--ink-soft);}
+
+  /* 建筑看点 */
+  .features .grid{
+    display:grid;grid-template-columns:repeat(2,1fr);gap:24px;
+  }
+  .feat{
+    display:flex;gap:18px;
+    background:#fff;border:1px solid var(--line);border-radius:8px;
+    padding:24px;transition:.25s;
+  }
+  .feat:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--gold-soft);}
+  .feat .num{
+    flex:0 0 44px;height:44px;border-radius:50%;
+    background:linear-gradient(135deg,#a8842c,#7a3b2e);
+    color:#fff;display:flex;align-items:center;justify-content:center;
+    font-size:15px;letter-spacing:1px;
+  }
+  .feat h3{margin:0 0 8px;font-size:16.5px;letter-spacing:1px;}
+  .feat p{margin:0;font-size:14.5px;color:var(--ink-soft);}
+
+  /* 参观流程 */
+  .visit{background:#2b241d;color:#efe6d6;}
+  .visit .sec-head p{color:#c3b7a3;}
+  .visit .sec-head .eyebrow{color:var(--gold-soft);}
+  .steps{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:0;
+    border:1px solid rgba(239,230,214,.18);border-radius:8px;overflow:hidden;
+  }
+  .step{
+    padding:28px 22px;border-right:1px solid rgba(239,230,214,.18);
+    background:rgba(255,255,255,.03);
+  }
+  .step:last-child{border-right:none;}
+  .step .idx{
+    font-size:13px;letter-spacing:3px;color:var(--gold-soft);display:block;margin-bottom:12px;
+  }
+  .step h3{margin:0 0 10px;font-size:16px;letter-spacing:1px;}
+  .step p{margin:0;font-size:14px;color:#c3b7a3;}
+
+  /* 内容 + 侧栏 */
+  .split{display:grid;grid-template-columns:1.6fr .9fr;gap:44px;align-items:start;}
+  .article p{margin:0 0 18px;font-size:15.5px;color:#3b342d;}
+  .article h3{
+    font-size:19px;margin:34px 0 14px;letter-spacing:1.5px;
+    padding-left:14px;border-left:4px solid var(--gold);
+  }
+  .article ul{margin:0 0 20px;padding-left:22px;color:#3b342d;font-size:15.5px;}
+  .article li{margin-bottom:9px;}
+  .note{
+    background:#fdf7ea;border:1px dashed var(--gold-soft);border-radius:6px;
+    padding:18px 22px;font-size:14.5px;color:#5c4a2c;margin:26px 0;
+  }
+  .note strong{color:var(--brick);}
+
+  aside.side{display:flex;flex-direction:column;gap:22px;position:sticky;top:96px;}
+  .side-card{
+    background:#fff;border:1px solid var(--line);border-radius:8px;padding:24px;
+    box-shadow:var(--shadow);
+  }
+  .side-card h3{
+    margin:0 0 16px;font-size:16px;letter-spacing:2px;
+    padding-bottom:12px;border-bottom:1px solid var(--line);
+  }
+  .side-card ul{list-style:none;margin:0;padding:0;font-size:14.5px;}
+  .side-card li{
+    padding:9px 0;border-bottom:1px dashed var(--line);color:var(--ink-soft);
+    display:flex;justify-content:space-between;gap:12px;
+  }
+  .side-card li:last-child{border-bottom:none;}
+  .side-card li b{color:var(--ink);font-weight:600;}
+  .side-card.tips{background:linear-gradient(160deg,#fffdf9,#f3ead9);}
+  .side-card.tips p{margin:0 0 12px;font-size:14.5px;color:#4a423b;}
+  .side-card.tips p:last-child{margin-bottom:0;}
+
+  /* FAQ */
+  .faq{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .faq-list{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
+  .faq-item{
+    background:#fff;border:1px solid var(--line);border-radius:8px;padding:22px 24px;
+  }
+  .faq-item h3{
+    margin:0 0 10px;font-size:16px;letter-spacing:1px;color:var(--brick);
+    display:flex;gap:10px;align-items:flex-start;
+  }
+  .faq-item h3::before{
+    content:"问";flex:0 0 24px;height:24px;border-radius:4px;background:var(--brick);color:#fff;
+    font-size:13px;display:flex;align-items:center;justify-content:center;line-height:1;
+  }
+  .faq-item p{margin:0;font-size:14.5px;color:var(--ink-soft);padding-left:34px;}
+
+  /* 页脚 */
+  footer.site{
+    background:#221c16;color:#b9ad99;padding:52px 0 26px;font-size:14px;
+  }
+  .foot-grid{
+    display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:34px;margin-bottom:36px;
+  }
+  .foot-grid h4{
+    color:#f0e7d6;font-size:15px;letter-spacing:2px;margin:0 0 16px;
+  }
+  .foot-grid p{margin:0 0 10px;line-height:1.9;}
+  .foot-grid ul{list-style:none;margin:0;padding:0;}
+  .foot-grid li{margin-bottom:9px;}
+  .foot-grid a:hover{color:var(--gold-soft);}
+  .foot-bottom{
+    border-top:1px solid rgba(185,173,153,.22);padding-top:20px;
+    display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+    font-size:13px;color:#8d8272;
+  }
+
+  /* 响应式 */
+  @media (max-width:1000px){
+    .hero .wrap{grid-template-columns:1fr;gap:36px;padding:56px 0;}
+    .ov-grid{grid-template-columns:1fr 1fr;}
+    .steps{grid-template-columns:1fr 1fr;}
+    .step:nth-child(2){border-right:none;}
+    .step:nth-child(1),.step:nth-child(2){border-bottom:1px solid rgba(239,230,214,.18);}
+    .split{grid-template-columns:1fr;gap:34px;}
+    aside.side{position:static;}
+    .foot-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:680px){
+    .head-inner{padding:14px 0;}
+    nav.main ul{gap:16px;font-size:14px;}
+    section{padding:46px 0;}
+    .ov-grid{grid-template-columns:1fr;}
+    .features .grid{grid-template-columns:1fr;}
+    .steps{grid-template-columns:1fr;}
+    .step{border-right:none;border-bottom:1px solid rgba(239,230,214,.18);}
+    .step:last-child{border-bottom:none;}
+    .faq-list{grid-template-columns:1fr;}
+    .foot-grid{grid-template-columns:1fr;gap:26px;}
+    .brand h1{font-size:19px;}
+    .hero h2{letter-spacing:1px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>上海历史建筑 · 城市人文观察</span>
+    <span class="tagline">百年荣宅对外开放 · 参观信息与建筑解读</span>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap head-inner">
+    <div class="brand">
+      <div class="seal">荣</div>
+      <div>
+        <h1>百年荣宅对外开放</h1>
+        <p>历史建筑 · 参观指南 · 建筑看点</p>
+      </div>
+    </div>
+    <nav class="main" aria-label="主导航">
+      <ul>
+        <li><a href="#about">关于荣宅</a></li>
+        <li><a href="#features">建筑看点</a></li>
+        <li><a href="#visit">参观流程</a></li>
+        <li><a href="#guide">游览建议</a></li>
+        <li><a href="#faq">常见问题</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- 首屏 -->
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <span class="kicker">历 史 建 筑 开 放 专 题</span>
+        <h2>一座百年宅邸的<em>重新打开</em>，<br>让城市记忆可以被走进</h2>
+        <p class="lead">
+          荣宅作为上海重要的近代花园住宅之一，长期以保护与修缮为主。随着对外开放，
+          公众得以近距离观看它的空间格局、装饰细节与修缮成果。本页整理荣宅的基本背景、
+          建筑看点、参观方式与游览建议，帮助你更从容地安排一次参观。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#visit">查看参观流程</a>
+          <a class="btn btn-ghost" href="#features">建筑看点一览</a>
+        </div>
+      </div>
+      <div class="hero-facts">
+        <h3>快 速 了 解</h3>
+        <dl>
+          <div class="row"><dt>建筑类型</dt><dd>近代花园住宅</dd></div>
+          <div class="row"><dt>所在城市</dt><dd>上海 · 静安区</dd></div>
+          <div class="row"><dt>建筑年代</dt><dd>二十世纪初</dd></div>
+          <div class="row"><dt>参观形式</dt><dd>以预约参观为主</dd></div>
+          <div class="row"><dt>核心看点</dt><dd>空间格局 · 装饰工艺</dd></div>
+          <div class="row"><dt>参观节奏</dt><dd>建议预留 1—2 小时</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关于 -->
+  <section class="overview" id="about">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">ABOUT / 关于荣宅</span>
+        <h2>为什么一座老宅的开放会引起关注</h2>
+        <p>老建筑的价值不只在“旧”，更在于它承载的城市生活史、建造工艺与空间审美。荣宅的开放，让这些原本封闭的内容有了被公众理解的机会。</p>
+      </div>
+      <div class="ov-grid">
+        <article class="ov-card">
+          <h3>城市记忆的载体</h3>
+          <p>近代上海的花园住宅集中体现了当时的居住方式、材料工艺与审美取向。荣宅所在的区域，是这类建筑较为集中的地段之一，其保存状况与修缮过程本身就具有观察价值。</p>
+        </article>
+        <article class="ov-card">
+          <h3>修缮与保护的样本</h3>
+          <p>老建筑的开放往往建立在长期修缮基础之上。结构加固、装饰修复、材料替换与设备更新如何平衡，是参观时值得留意的细节，也是理解“保护”二字的关键。</p>
+        </article>
+        <article class="ov-card">
+          <h3>公共文化空间</h3>
+          <p>开放后的荣宅，通常以展览、文化活动或限定参观等形式与公众见面。它不再只是被围栏隔开的建筑，而成为可以进入、可以停留、可以讨论的城市文化场所。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 建筑看点 -->
+  <section class="features" id="features">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">ARCHITECTURE / 建筑看点</span>
+        <h2>走进荣宅，可以重点看什么</h2>
+        <p>与其走马观花地拍照，不如把注意力放在空间与细节上。以下六个方向，适合作为参观时的观察线索。</p>
+      </div>
+      <div class="grid">
+        <article class="feat">
+          <div class="num">01</div>
+          <div>
+            <h3>整体空间格局</h3>
+            <p>从入口到庭院再到室内，注意建筑与花园的关系、主次动线的安排，以及不同功能房间之间的过渡方式，这是理解一座住宅设计意图的起点。</p>
+          </div>
+        </article>
+        <article class="feat">
+          <div class="num">02</div>
+          <div>
+            <h3>室内装饰工艺</h3>
+            <p>天花线脚、木作护墙、壁炉、楼梯栏杆等部位，往往集中体现了当时的工艺水平。观察材质衔接与纹样重复方式，能看出修缮的细致程度。</p>
+          </div>
+        </article>
+        <article class="feat">
+          <div class="num">03</div>
+          <div>
+            <h3>彩绘玻璃与窗</h3>
+            <p>部分近代住宅会使用彩色玻璃或特殊窗型。光线穿过时形成的色调变化，是室内氛围的重要组成部分，也常是参观者停留较久的区域。</p>
+          </div>
+        </article>
+        <article class="feat">
+          <div class="num">04</div>
+          <div>
+            <h3>楼梯与中庭</h3>
+            <p>楼梯通常是住宅中最具雕塑感的结构。注意踏步比例、扶手曲线与采光方式，它们共同决定了垂直空间的体验感。</p>
+          </div>
+        </article>
+        <article class="feat">
+          <div class="num">05</div>
+          <div>
+            <h3>材料与色彩</h3>
+            <p>地面拼花、墙面涂料、石材与木材的搭配，反映了不同时期的审美偏好。修缮中保留旧痕迹与恢复原貌之间的取舍，也值得留意。</p>
+          </div>
+        </article>
+        <article class="feat">
+          <div class="num">06</div>
+          <div>
+            <h3>庭院与周边环境</h3>
+            <p>建筑并非孤立存在。围墙、绿化、铺地与相邻建筑的关系，共同构成了这座宅邸在城市中的位置感。</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 参观流程 -->
+  <section class="visit" id="visit">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">VISIT / 参观流程</span>
+        <h2>一次参观通常包含哪些环节</h2>
+        <p>历史建筑的开放往往采用限流、预约或分时段的方式。以下流程为一般性梳理，具体安排请以现场及官方发布的信息为准。</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <span class="idx">STEP 01</span>
+          <h3>确认开放信息</h3>
+          <p>先了解当前是否处于开放期、开放日期与时段，以及是否需要提前预约。老建筑的开放安排可能会随展览或维护计划调整。</p>
+        </div>
+        <div class="step">
+          <span class="idx">STEP 02</span>
+          <h3>完成预约登记</h3>
+          <p>按要求提交预约信息，保留确认凭证。部分场次会核验身份信息，建议提前准备好相关证件并准时到达。</p>
+        </div>
+        <div class="step">
+          <span class="idx">STEP 03</span>
+          <h3>入场与寄存</h3>
+          <p>入场时配合安检与引导，大件行李、雨具、饮品等可能需按规定寄存。室内空间有限，轻装参观体验更好。</p>
+        </div>
+        <div class="step">
+          <span class="idx">STEP 04</span>
+          <h3>按动线参观</h3>
+          <p>沿指定路线参观，留意不可进入的区域与拍摄限制。遇到感兴趣的细节，可以放慢脚步，也可以结合现场说明牌理解。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 正文 + 侧栏 -->
+  <section id="guide">
+    <div class="wrap split">
+      <div class="article">
+        <div class="sec-head">
+          <span class="eyebrow">GUIDE / 游览建议</span>
+          <h2>怎样参观，收获会更多</h2>
+        </div>
+
+        <p>
+          老建筑的参观体验，很大程度上取决于你带着什么问题走进去。如果只是匆匆穿过房间拍照，
+          很容易觉得“不过是一栋旧房子”；但如果把注意力放在空间如何被组织、材料如何被使用、
+          修缮如何被处理上，同一座建筑会呈现出完全不同的信息密度。
+        </p>
+
+        <h3>参观前的准备</h3>
+        <ul>
+          <li>先了解建筑的大致年代与背景，带着基本认知进入，现场更容易看懂细节。</li>
+          <li>确认当天的开放时段与预约要求，避免因限流或临时调整而无法入场。</li>
+          <li>穿着舒适的鞋子。老建筑地面可能存在高差，楼梯也多为原始结构。</li>
+          <li>提前了解拍摄规定，部分区域可能限制三脚架、闪光灯或商业拍摄。</li>
+        </ul>
+
+        <h3>参观时的观察方法</h3>
+        <p>
+          可以从“由外到内、由整体到细节”的顺序展开。先在庭院或入口处观察建筑体量与立面比例，
+          再进入室内感受层高、采光与动线，最后把目光落到装饰工艺与材料交接处。
+          这样的顺序有助于建立整体印象，而不是被零散细节牵着走。
+        </p>
+        <p>
+          遇到说明牌或导览内容时，不妨多停留片刻。历史建筑的很多信息并不会直接“写在墙上”，
+          而是通过修缮前后对比、材料保留方式、空间功能变化等方式呈现出来。
+        </p>
+
+        <div class="note">
+          <strong>温馨提示：</strong>历史建筑的空间尺度、承重条件与消防要求与新建场馆不同，
+          开放方通常会对人流、路线和行为作出限制。参观时请配合现场引导，
+          不触碰展陈与装饰构件，共同维护建筑状态。
+        </div>
+
+        <h3>适合与不适合的参观心态</h3>
+        <p>
+          适合的心态是“观察与理解”：把它当作一处需要慢慢阅读的空间，接受它并不宏大、也不一定处处崭新。
+          不太适合的心态是“打卡与比较”：如果只以拍照效果或热闹程度来衡量，可能会错过这座建筑真正有意思的部分。
+        </p>
+
+        <h3>结合周边一起安排</h3>
+        <p>
+          荣宅所在的区域本身就有较多近代建筑与街道肌理。如果时间允许，可以把参观与周边街区漫步结合起来，
+          在对比中理解这一类住宅在城市中的分布与演变。这样一次出行，收获往往比单点参观更完整。
+        </p>
+      </div>
+
+      <aside class="side">
+        <div class="side-card">
+          <h3>参 观 要 点</h3>
+          <ul>
+            <li><span>开放形式</span><b>预约 / 限流</b></li>
+            <li><span>建议时长</span><b>1—2 小时</b></li>
+            <li><span>重点区域</span><b>楼梯 · 厅堂</b></li>
+            <li><span>拍摄限制</span><b>以现场为准</b></li>
+            <li><span>适合人群</span><b>建筑与人文爱好者</b></li>
+          </ul>
+        </div>
+        <div class="side-card tips">
+          <h3>小 提 示</h3>
+          <p>开放安排可能因展览、维护或活动而调整，出行前请以官方渠道发布的最新信息为准。</p>
+          <p>室内空间相对安静，参观时请控制音量，避免影响他人体验。</p>
+          <p>如遇临时闭馆或分时段入场，建议预留一定的弹性时间。</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">FAQ / 常见问题</span>
+        <h2>关于荣宅开放，读者常问的几个问题</h2>
+        <p>以下回答为一般性说明，具体规定请以开放方最新公告为准。</p>
+      </div>
+      <div class="faq-list">
+        <article class="faq-item">
+          <h3>荣宅现在是否长期对外开放？</h3>
+          <p>历史建筑的开放形式通常会随展览、修缮与运营计划变化，可能存在阶段性开放或限定场次。建议在计划前往前，先确认当前是否处于开放状态。</p>
+        </article>
+        <article class="faq-item">
+          <h3>参观需要提前预约吗？</h3>
+          <p>由于建筑空间与承载能力有限，此类场所多采用预约或分时段入场的方式。是否需要预约、如何预约，请以官方发布的信息为准。</p>
+        </article>
+        <article class="faq-item">
+          <h3>可以在室内拍照吗？</h3>
+          <p>多数历史建筑允许非商业性的个人拍摄，但可能对闪光灯、三脚架、自拍杆或特定区域作出限制。入场时留意现场提示即可。</p>
+        </article>
+        <article class="faq-item">
+          <h3>参观大概需要多长时间？</h3>
+          <p>如果只是走完主要动线，约需一小时左右；若对建筑细节与展览内容较感兴趣，建议预留一到两小时，节奏会更从容。</p>
+        </article>
+        <article class="faq-item">
+          <h3>适合带小朋友一起参观吗？</h3>
+          <p>可以，但需注意看护。老建筑存在台阶、高差与较窄通道，且部分装饰构件不宜触碰，家长需提前告知孩子参观规则。</p>
+        </article>
+        <article class="faq-item">
+          <h3>建筑内是否设有休息与无障碍设施？</h3>
+          <p>受原有结构限制，不同区域的设施条件存在差异。如有无障碍通行或特殊协助需求，建议出行前向开放方咨询确认。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>百年荣宅对外开放</h4>
+        <p>一个围绕历史建筑开放与参观的信息页面，整理荣宅的背景、建筑看点、参观流程与游览建议，帮助读者更有效地安排一次参观。</p>
+      </div>
+      <div>
+        <h4>页面导航</h4>
+        <ul>
+          <li><a href="#about">关于荣宅</a></li>
+          <li><a href="#features">建筑看点</a></li>
+          <li><a href="#visit">参观流程</a></li>
+          <li><a href="#guide">游览建议</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>相关主题</h4>
+        <ul>
+          <li><a href="#guide">老建筑参观方法</a></li>
+          <li><a href="#features">近代住宅装饰工艺</a></li>
+          <li><a href="#faq">参观常见问题</a></li>
+          <li><a href="#visit">预约与入场须知</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>说明</h4>
+        <p>本页内容为一般性介绍，不构成官方发布。开放时间、预约方式与参观规则请以开放方最新公告为准。</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 百年荣宅对外开放 · 历史建筑参观信息整理</span>
+      <span>内容仅供参观参考</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // 平滑滚动与导航高亮（轻量交互）
+  (function () {
+    var links = document.querySelectorAll('nav.main a[href^="#"]');
+    links.forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        var id = this.getAttribute('href');
+        var target = document.querySelector(id);
+        if (target) {
+          e.preventDefault();
+          var top = target.getBoundingClientRect().top + window.pageYOffset - 80;
+          window.scrollTo({ top: top, behavior: 'smooth' });
+        }
+      });
+    });
+
+    // 根据滚动位置高亮当前栏目
+    var sections = [];
+    document.querySelectorAll('main section[id]').forEach(function (sec) {
+      sections.push(sec);
+    });
+    if (!sections.length) return;
+
+    window.addEventListener('scroll', function () {
+      var pos = window.pageYOffset + 120;
+      var current = sections[0].id;
+      sections.forEach(function (sec) {
+        if (sec.offsetTop <= pos) current = sec.id;
+      });
+      links.forEach(function (link) {
+        var isActive = link.getAttribute('href') === '#' + current;
+        link.style.color = isActive ? '#7a3b2e' : '';
+        link.style.borderColor = isActive ? '#a8842c' : 'transparent';
+      });
+    }, { passive: true });
+  })();
+</script>
+
+</body>
+  </html>
